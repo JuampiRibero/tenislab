@@ -1,0 +1,589 @@
+/* Reseteo */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Propiedades del HTML */
+html { 
+	font-family: 'Work Sans', sans-serif;
+	font-size: 62.5%;
+	background-color: #D2D9A3; 
+}
+
+/* Propiedad del body */
+body {
+	font-size: 1.6rem;
+}
+
+/* Propiedades del texto del menú de navegación */
+a {
+	color: #3D3E40;
+	text-decoration: none;
+}
+
+/* Propiedades de listas no ordenadas */
+ul {
+	list-style-type: circle; /* Tipo de marcadores de lista */
+	list-style-position: outside; /* Posicion de la lista donde sera colocado el marcador */
+	line-height: 2;
+	text-align: justify;
+}
+
+/* Propiedades de textos de input de tipo cicular */
+span {
+    font-size: 1.2rem; /* 12px */
+    margin-right: 45px; /* Separación entre el borde derecho y el exterior de la caja */
+}
+
+/* Propiedades de encabezado h1 */
+h1 {
+	grid-area: titulo;
+	display: grid;
+	justify-items: start;
+	align-items: center;
+	padding-left: 20px;
+	margin-top: -20px;
+	background-image: linear-gradient(to right, #414d0b, #727a17);
+	font-size: 3rem;
+	font-weight: 600; 
+	color: #D6D989; 
+	text-shadow: 5px 3px 1px black;
+}
+
+/* Propiedades de encabezado h2 */
+h2 {
+	grid-area: subtitulo;
+	display: grid;
+	justify-items: center;
+	align-items: center;
+	margin-bottom: -20px;
+	font-size: 2rem;
+	font-weight: 600;
+	font-style: italic;
+	text-align: center;
+}
+
+/* Propiedad de encabezado h3 */
+h3 {
+	padding-bottom: 15px;
+}
+
+/* Propiedad de encabezado h4 */
+h4 {
+	padding: 5px;
+}
+
+/* Propiedad de encabezado h5 */
+h5 {
+	padding: 5px;
+}
+
+/* Propiedades de grid de la sección Inicio */
+.grillaInicio {
+	display: grid;
+	grid-template-areas:
+	"header header header"
+	"titulo titulo titulo"
+	"subtitulo subtitulo subtitulo"
+	"coverflow coverflow coverflow"
+	"productos productos publicidad"
+	"servicios servicios publicidad"
+	"promociones promociones publicidad"
+	"footer footer footer";
+	grid-template-rows: 200px 30px 50px auto auto auto auto auto;
+	grid-template-columns: auto auto auto;
+	grid-column-gap: 20px;
+	grid-row-gap: 20px;
+	height: 100vh;
+}
+
+/* Propiedades de grid de la sección Sobre Nosotros */
+.grillaSobreNosotros {
+	display: grid;
+	grid-template-areas:
+	"header header header"
+	"titulo titulo titulo"
+	"subtitulo subtitulo subtitulo"
+	"sobreNosotros sobreNosotros sobreNosotros"
+	"footer footer footer";
+	grid-template-rows: 200px 30px 50px auto auto;
+	grid-template-columns: auto auto auto;
+	grid-column-gap: 20px;
+	grid-row-gap: 20px;
+	height: 100vh;
+}
+
+/* Propiedades de grid de la sección Productos y Servicios */
+.grillaProductosServicios {
+	display: grid;
+	grid-template-areas:
+	"header header header"
+	"titulo titulo titulo"
+	"subtitulo subtitulo subtitulo"
+	"productosServicios productosServicios productosServicios"
+	"tienda tienda tienda"
+	"footer footer footer";
+	grid-template-rows: 200px 30px 50px auto auto auto;
+	grid-template-columns: auto auto auto;
+	grid-column-gap: 20px;
+	grid-row-gap: 20px;
+	height: 100vh;
+}
+
+/* Propiedades de grid de la sección Promoción */
+.grillaPromocion {
+	display: grid;
+	grid-template-areas:
+	"header header header"
+	"titulo titulo titulo"
+	"subtitulo subtitulo subtitulo"
+	"promocion promocion promocion"
+	"footer footer footer";
+	grid-template-rows: 200px 30px 50px auto auto;
+	grid-template-columns: auto auto auto;
+	grid-column-gap: 20px;
+	grid-row-gap: 20px;
+	height: 100vh;
+}
+
+/* Propiedades de grid de la sección Contacto */
+.grillaContacto {
+	display: grid;
+	grid-template-areas:
+	"header header header"
+	"titulo titulo titulo"
+	"subtitulo subtitulo subtitulo"
+	"contacto contacto contacto"
+	"footer footer footer";
+	grid-template-rows: 200px 30px 50px auto auto;
+	grid-template-columns: auto auto auto;
+	grid-column-gap: 20px;
+	grid-row-gap: 20px;
+	height: 100vh;
+}
+
+/* Propiedades de grid al encabezado de las secciones */
+header {
+	grid-area: header;
+	display: grid;
+	grid-template-columns: 165px auto;
+	background-image: linear-gradient(to right, #45B649, #DCE35B);
+}
+
+/* Propiedades de flex al contenedor del logo */
+.header__contenedorLogo {
+	display: flex;
+	justify-items: start;
+	align-items: center;
+}
+
+/* Propiedades de logo */
+.header__logo {
+	border-radius: 100px;
+	width: 125px;
+	height: 125px;
+	margin: 20px;
+	transition: transform 0.5s ease;
+}
+
+/* Transición de logo */
+.header__logo:hover {
+    transform: scale(1.25, 1.25);
+}
+
+/* Propiedades de flex al menu de navegación */
+.navegacion {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: flex-end;
+	align-content: center;
+}
+
+/* Propiedades de elementos del menu de navegación */
+.navegacion__items {
+	font-size: 1em;
+	text-align: center;
+	padding: 15px;
+	border-radius: 10px;
+	transition: background-color 2s ease;
+}
+
+/* Transición de elementos del menu de navegación */
+.navegacion__items:hover {
+	background-color: #45B649;
+}
+
+/* Propiedades de flex al futuro coverflow de la sección Inicio */
+section.coverFlow {
+	grid-area: coverflow;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-evenly;
+	align-items: center;
+	padding: 20px;
+	margin: 20px;	
+	background-color: #f2f2f2; 
+    border-radius: 15px;
+}
+
+/* Propiedades de grid al contenido productos de la sección Inicio */
+section.productos {
+	grid-area: productos;
+	display: grid;
+	grid-template-columns: 250px auto;
+	justify-content: start;
+	align-items: center;
+	padding: 20px;
+	margin-left: 20px;	
+	background-color: #f2f2f2; 
+    border-radius: 15px;
+}
+
+/* Propiedades de grid al contenido servicios de la sección Inicio */
+section.servicios {
+	grid-area: servicios;
+	display: grid;
+	grid-template-columns: 250px auto;
+	justify-content: start;
+	align-items: center;
+	padding: 20px;
+	margin-left: 20px;	
+	background-color: #f2f2f2; 
+    border-radius: 15px;
+}
+
+/* Propiedades de grid al contenido promociones de la sección Inicio */
+section.promociones {
+	grid-area: promociones;
+	display: grid;
+	grid-template-columns: 250px auto;
+	justify-content: start;
+	align-items: center;
+	padding: 20px;
+	margin-left: 20px;	
+	background-color: #f2f2f2; 
+    border-radius: 15px;
+}
+
+/* Propiedades de grid al contenido de la sección Sobre Nosotros */
+section.sobreNosotros {
+	grid-area: sobreNosotros;
+	display: grid;
+	justify-content: center;
+	align-items: center;
+	max-width: 1000px;
+	padding: 20px;
+	margin: 20px auto 0px auto;	
+	background-color: #f2f2f2; 
+    border-radius: 15px;
+}
+
+/* Propiedades de grid al contenido de la sección Productos y Servicios */
+section.productosServicios {
+	grid-area: productosServicios;
+	display: grid;
+	justify-content: center;
+	align-items: center;
+	padding: 20px;
+	margin: 20px;	
+	background-color: #f2f2f2; 
+    border-radius: 15px;
+}
+
+/* Propiedades de grid al contenido tienda online de la sección Productos y Servicios */
+section.tiendaOnline {
+	grid-area: tienda;
+	display: grid;
+	grid-template-rows: auto auto;
+	grid-row-gap: 30px;
+	justify-content: center;
+	align-content: center;
+	text-align: center;
+	padding: 20px;
+	margin: 0px 20px 0px 20px;		
+	background-image: radial-gradient(#414d0b, #727a17); 
+    border-radius: 15px;
+}
+
+/* Propiedades de texto y animación de tienda online de la sección Productos y Servicios */
+.tiendaOnline__texto {
+	font-size: 2.25rem;
+	font-weight: bold;
+	color: white;
+	animation-name: textoTienda;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+/* Propiedades de grid al contenido de la sección Promociones */
+section.promocion {
+	grid-area: promocion;
+	display: grid;
+	justify-content: center;
+	align-items: center;
+	padding: 20px;
+	margin: 20px;	
+	background-color: #f2f2f2; 
+    border-radius: 15px;
+}
+
+/* Propiedades de grid al contenido de la sección Contacto */
+section.contacto {
+	grid-area: contacto;
+	display: grid;
+	background-color: #f2f2f2; 
+    padding: 20px;
+	margin: 20px auto 0px auto;	
+    max-width: 600px;
+    width: 100%;
+    list-style-type: none;
+    border-radius: 15px;
+}
+
+/* Propiedad de textos de contenido de sección Inicio */
+.seccion {
+	padding: 20px;
+}
+
+/* Propiedades de contenedor de imágenes sección Inicio */
+.seccion__thumbnail {
+    width: 250px;
+    height: 150px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Propiedades de contenedor de imágenes de futuro coverflow de sección Inicio */
+.seccion__thumbnail--coverFlow {
+    width: 350px;
+    height: 200px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Propiedades de contenedor de imágenes de publicidad de sección Inicio */
+.seccion__thumbnail--publicidad {
+    width: 300px;
+    height: 300px;
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+/* Propiedades de imágenes */
+.seccion__img {
+    width: 100%;
+    height: 100%;
+}
+
+/* Propiedades de títulos de contenido de sección Inicio */
+.seccion__titulo {
+    font-size: 2.5rem;
+    font-weight: normal;
+}
+
+/* Propiedades de párrafos de contenido de sección Inicio */
+.seccion__parrafo {
+    line-height: 25px;
+    color: black; 	
+    margin-top: 20px;
+	text-align: justify;
+}
+
+/* Propiedades de flex a contenido de sección Productos y Servicios y Promociones */
+.galeria {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-content: center;
+}
+
+/* Propiedades de contenedor de sección Productos y Servicios y Promociones */
+.galeria__contenedor {
+	width: 225px;
+	height: 390px;
+	position: relative;
+	text-align: center;
+	border: 3px solid black;
+	background-color: white;
+	border-radius: 15px;
+	margin: 5px;
+	overflow: hidden;
+}
+
+/* Propiedades de imágenes de sección Productos y Servicios y Promociones */
+.galeria__img {
+	width: 200px; 
+	height: 250px; 
+	filter: brightness(1.1);
+	mix-blend-mode: multiply;
+	transition: transform 0.5s ease;
+}
+
+/* Transición de imágenes de sección Productos y Servicios y Promociones */
+.galeria__img:hover {
+    transform: scale(1.1, 1.1);
+}
+
+/* Propiedad de texto de contenido de sección Productos y Servicios y Promociones */
+.galeria__texto {
+	font-size: 0.75em;
+}
+
+/* Propiedades de texto de precio viejo de la sección Promociones */
+.galeria__precioViejo {
+	text-decoration: line-through;
+	color: red;
+}
+
+/* Propiedades de texto de precio nuevo de la sección Promociones */
+.galeria__precioNuevo {
+	color: black;
+	font-size: 1.65rem;
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+
+/* Propiedades de texto sobre imagnen de la sección Promociones */
+.galeria__textoEncima{
+    position: absolute;
+	font-weight: bold;
+    top: 10px;
+    left: 10px;
+	color: black;
+	background-color: yellow;
+	padding: 5px;
+	border-radius: 10px;
+}
+
+/* Propiedades de grid a la publicidad de la sección Inicio */
+aside {
+	grid-area: publicidad;
+	display: grid;
+	grid-template-columns: 300px;
+	justify-content: center;
+	align-items: center;
+	margin-right: 20px;
+	background-image: radial-gradient(#414d0b, #727a17);
+	color: white;
+    border-radius: 15px;
+    padding: 20px;
+	text-align: center;
+	font-style: italic;
+}
+
+/* Propiedades de flex al formulario de sección Contacto */
+.formulario {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+/* Propiedades de espacios de interacción del usuario en el formulario de sección Contacto */
+.input,
+.select,
+.textarea {
+    flex: 1 1 auto;
+	padding: 5px;
+    margin: -4px 0px 20px 25px;
+}
+
+/* Propiedades de input de tipo cicular del formulario de sección Contacto */
+input[type=radio] {
+    height: 20px;
+    width: 10px;
+    cursor: pointer;
+}
+
+/* Propiedades de input de tipo checkbox del formulario de sección Contacto */
+input[type=checkbox] {
+    height: 20px;
+    width: 10px;
+    cursor: pointer;
+}
+
+/* Propiedades de botones enviar y limpiar del formulario de sección Contacto */
+#boton {
+    width: 30%; 
+	background-color: #DCE35B; 
+	color: #3D3E40;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+    padding: 10px;
+	margin: 25px 70px 0px 70px;
+    transition: transform 1s ease;
+}
+
+/* Transición de botones enviar y limpiar del formulario de sección Contacto */
+#boton:hover {
+	background-color: #414d0b; 
+	color: #D6D989;
+	transition: background-color 1s ease;
+    transform: scale(1.15, 1.15);
+}
+ 
+/* Propiedades de elemento de interfaz de usuario */
+.formulario label {
+    width: 30%;
+}
+
+/* Propiedades de flex al pie de página de las secciones */
+footer {
+	grid-area: footer; 
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px;
+	margin-top: 20px;
+	background-image: linear-gradient(to right, #45B649, #DCE35B);
+}
+
+/* Propiedad a algunos elementos del pie de página de las secciones */
+.footer__contenido {
+	padding-bottom: 5px;
+}
+
+/* Propiedades de listas no ordenadas del pie de página de las secciones */
+.footer ul {
+	list-style-type: none;
+	font-size: 1rem;
+}
+
+/* Propiedades de mapa de pie de página de las secciones */
+.footer__map {
+	width: 300px;
+	height: 150px;
+    border: 0; 
+    margin-top: 10px;
+}
+
+/* Propiedades de logos de redes sociales de pie de página de las secciones */
+.footer__logos {
+	width: 30px;
+	height: 30px;
+	margin-top: 10px;
+	transition: transform 0.5s ease;
+}
+
+/* Transición de logos de redes sociales de pie de página de las secciones */
+.footer__logos:hover {
+    transform: scale(1.25, 1.25);
+}
+
+/* Propiedad de inline-block a algunos elementos */
+#inlineBlock {
+	display: inline-block;
+	margin-top: 20px;
+}
+
+/* Efecto de la animación título de sección */
+@keyframes textoTienda {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+}

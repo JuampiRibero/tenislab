@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <!-- Inicio de grid -->
+    <div class="grillaContacto">
+        <!-- Inicio encabezado del sitio web -->
+        <header class="header">
+            <div class="header__contenedorLogo">
+                <a href="index.html"><img src="img/tenislab.png" class="header__logo"></a>
+            </div>
+            <!-- Inicio menú de navegación del sitio web -->
+            <nav class="navegacion">  
+                <div class="navegacion__items">
+                    <a href="index.html">INICIO</a>
+                </div>
+                <div class="navegacion__items">
+                    <a href="sobrenosotros.html">SOBRE NOSOTROS</a>
+                </div>
+                <div class="navegacion__items">
+                    <a href="productosyservicios.html">PRODUCTOS Y SERVICIOS</a>
+                </div>
+                <div class="navegacion__items">
+                    <a href="promociones.html">PROMOCIONES</a>
+                </div>
+                <div class="navegacion__items">
+                    <a href="contacto.html">CONTACTO</a>
+                </div>
+            </nav>
+            <!-- Fin menú de navegación del sitio web -->
+        </header>
+        <!-- Fin encabezado del sitio web -->
+        <!-- Inicio del contenido -->
+        <h1>Contacto</h1>
+            <h2>Dejanos tu consulta a través del siguiente formulario</h2>
+        <section class="contacto">
+            <form action="enviar.php" method="POST" enctype="multipart/form-data">
+                <div class="formulario">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" name="nombre" placeholder="Tu nombre" class="input">
+                </div>
+                <div class="formulario">
+                    <label for="apellido">Apellido:</label>
+                    <input type="text" name="apellido" placeholder="Tu apellido" class="input">
+                </div>
+                <div class="formulario">
+                    <label for="email">Correo Electrónico:</label>
+                    <input type="text" name="email" placeholder="Tu dirección de correo electrónico" class="input">
+                </div>
+                <div class="formulario">
+                    <label for="telefono">Teléfono:</label>
+                    <input type="text" name="telefono" placeholder="Tu número de teléfono" class="input">
+                </div>
+                <div class="formulario">
+                    <label for="telefono">Tipo de Teléfono:</label>
+                    <input type="radio" name="tipotelefono" value="celular" class="input"> <span>Celular</span>
+                    <input type="radio" name="tipotelefono" value="fijo" class="input"><span>Fijo</span>
+                </div>
+                <div class="formulario">
+                    <label>Tipo de Consulta:</label>
+                    <select name="consulta" class="select">
+                        <option value="0"></option>
+                        <option value="1">Stock</option>
+                        <option value="2">Precios</option>
+                        <option value="3">Encordados</option>
+                        <option value="4">Clases de Tenis</option>
+                        <option value="5">Otra</option>
+                    </select>
+                </div>
+                <div class="formulario">
+                    <label>Dejanos tu mensaje:</label>
+                    <textarea name="textarea" rows="5" placeholder="Ingresa el mensaje que nos quieras dejar" class="textarea"></textarea>
+                </div>
+                <div class="formulario">
+                    <label>¿Desea recibir nuestra Newsletter?</label>
+                    <input type="checkbox" name="acepta" value="1" class="input">
+                </div>
+                <div class="formulario">
+                    <input type="submit" name="submit" value="Enviar" id="boton">
+                    <input type="reset" name="reset" value="Limpiar" id="boton">
+                </div>
+            </form>
+        </section>
+        <!-- Fin del contenido -->
+        <!-- Inicio pie de página del sitio web -->
+        <footer class="footer">
+            <div>
+                <div class="footer__contenido">
+                    <h4>Información</h4>
+                    <ul >
+                        <li>&#128205; Roma esq. Alberdi</li>
+                        <li>&#128222; +54 9 3571685401</li>
+                        <li>&#128666; Envíos a todo el país</li>
+                    </ul>
+                </div>
+                <div class="footer__contenido">
+                    <h4>Medios de Pago</h4>
+                    <ul>
+                        <li>&#128181; Efectivo</li>
+                        <li>&#128179; Tarjetas de Crédito y Débito</li>
+                    </ul>
+                </div>
+                <div class="footer__contenido">
+                    <h5>2021 &#169; TenisLab. Todos los derechos reservados.</h5>
+                </div>
+            </div>
+            <div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d337.3983750263822!2d-64.11561428800029!3d-32.17774193600193!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95cd6f24cc9b6e75%3A0xf31e908957e0133!2zUsOtbyBUZXJjZXJvLCBDw7NyZG9iYQ!5e1!3m2!1ses-419!2sar!4v1622466747814!5m2!1ses-419!2sar" allowfullscreen="" loading="lazy" class="footer__map"></iframe>
+            </div>
+            <div>
+                <h4>Visitanos en nuestras redes sociales</h4>
+                <ul>
+                    <li><a href="https://www.facebook.com/TenisLab-1454268848037093/"><img src="img/facebook.svg" class="footer__logos"></a></li>
+                    <li><a href="https://www.instagram.com/tenis.lab/?hl=es"><img src="img/instagram.svg" class="footer__logos"></a></li>
+                    <li><a href="https://api.whatsapp.com/send?phone=+5493571685401"><img src="img/whatsapp.svg" class="footer__logos"></a></li>
+                </ul>
+            </div>
+        </footer>
+        <!-- Fin pie de página del sitio web -->
+    </div>
+    <!-- Fin de grid -->
+</body>
+</html>
