@@ -8,10 +8,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
     <title>TenisLab - Inicio</title>
 </head>
 <body>
@@ -39,6 +37,10 @@
                 <div class="navegacion__items">
                     <a href="contacto.html">CONTACTO</a>
                 </div>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="¿Qué está buscando?" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+                </form>
             </nav>
             <!-- Fin menú de navegación del sitio web -->
         </header>
@@ -50,7 +52,7 @@
                 <img src="img/tenis.png" alt="Futuro Cover Flow" class="seccion__thumbnail--coverFlow">
                 <img src="img/pelotas.png" alt="Futuro Cover Flow" class="seccion__thumbnail--coverFlow">
                 <img src="img/padel.png" alt="Futuro Cover Flow" class="seccion__thumbnail--coverFlow">
-        </section>
+        </section>        
         <section class="productos">
             <a href="productosyservicios.html" class="seccion__thumbnail">
                 <img src="img/tenisypadel.png" alt="Productos" class="seccion__img">
@@ -76,7 +78,7 @@
                 <img src="img/sale.png" alt="Sale" class="seccion__img">
             </a>  
             <div class="seccion">
-                <h3 class="seccion__titulo">Promociones</h3>
+                <h3 class="seccion__titulo">Promociones<span class="badge badge-secondary wow animate__animated animate__heartBeat">Nuevo</span></h3>
                 <h4>Raquetas, Paletas y más productos en promoción</h4>
                 <p class="seccion__parrafo"> Ingresá aquí para encontrar los productos que estan en promoción.</p>
             </div>
@@ -102,7 +104,7 @@
         <!-- Inicio espacio publicitario del sitio web -->
         <!-- Inicio pie de página del sitio web -->
         <footer class="footer">
-            <div>
+            <div class="wow animate__animated animate__fadeInLeft">
                 <div class="footer__contenido">
                     <h4>Información</h4>
                     <ul >
@@ -123,9 +125,9 @@
                 </div>
             </div>
             <div>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d337.3983750263822!2d-64.11561428800029!3d-32.17774193600193!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95cd6f24cc9b6e75%3A0xf31e908957e0133!2zUsOtbyBUZXJjZXJvLCBDw7NyZG9iYQ!5e1!3m2!1ses-419!2sar!4v1622466747814!5m2!1ses-419!2sar" allowfullscreen="" loading="lazy" class="footer__map"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d337.3983750263822!2d-64.11561428800029!3d-32.17774193600193!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95cd6f24cc9b6e75%3A0xf31e908957e0133!2zUsOtbyBUZXJjZXJvLCBDw7NyZG9iYQ!5e1!3m2!1ses-419!2sar!4v1622466747814!5m2!1ses-419!2sar" allowfullscreen="" loading="lazy" class="footer__map wow animate__animated animate__fadeInUp img-thumbnail"></iframe>
             </div>
-            <div>
+            <div class="wow animate__animated animate__fadeInRight">
                 <h4>Visitanos en nuestras redes sociales</h4>
                 <ul>
                     <li><a href="https://www.facebook.com/TenisLab-1454268848037093/"><img src="img/facebook.svg" class="footer__logos"></a></li>
@@ -137,5 +139,10 @@
         <!-- Fin pie de página del sitio web -->
     </div>
     <!-- Fin de grid -->
+    <!-- Activando wow.js -->
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
 </body>
 </html>

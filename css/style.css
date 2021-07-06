@@ -7,7 +7,7 @@
 
 /* Propiedades del HTML */
 html { 
-	font-family: 'Work Sans', sans-serif;
+	font-family: 'Work Sans', sans-serif; 
 	font-size: 62.5%;
 	background-color: #D2D9A3; 
 }
@@ -25,16 +25,16 @@ a {
 
 /* Propiedades de listas no ordenadas */
 ul {
-	list-style-type: circle; /* Tipo de marcadores de lista */
-	list-style-position: outside; /* Posicion de la lista donde sera colocado el marcador */
+	list-style-type: circle;
+	list-style-position: outside;
 	line-height: 2;
 	text-align: justify;
 }
 
 /* Propiedades de textos de input de tipo cicular */
 span {
-    font-size: 1.2rem; /* 12px */
-    margin-right: 45px; /* Separación entre el borde derecho y el exterior de la caja */
+    font-size: 1.2rem;
+    margin-right: 45px;
 }
 
 /* Propiedades de encabezado h1 */
@@ -376,14 +376,15 @@ section.contacto {
     width: 100%;
     height: 100%;
 	z-index:1;
-	filter:alpha(opacity=70);
-	-moz-opacity:.70;
-	opacity:.70;
+	filter:alpha(opacity=100);
 }
 
 /* Transición de imágenes */
 .seccion__img:hover {
-	opacity: 100;
+	transition: 1s ease;
+	opacity: 70;
+	-moz-opacity:.70;
+	opacity:.70;
 }
 
 /* Propiedades de títulos de contenido de sección Inicio */
