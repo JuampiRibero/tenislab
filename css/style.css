@@ -9,16 +9,23 @@
 html { 
 	font-family: 'Work Sans', sans-serif; 
 	font-size: 62.5%;
-	background-color: #D2D9A3; 
 }
 
 /* Propiedad del body */
 body {
 	font-size: 1.6rem;
+	background-color: #D2D9A3;
+	font-family: 'Work Sans', sans-serif; 
 }
 
 /* Propiedades del texto del menú de navegación */
 a {
+	color: #3D3E40;
+	text-decoration: none;
+}
+
+/* Transición del texto del menú de navegación */
+a:hover {
 	color: #3D3E40;
 	text-decoration: none;
 }
@@ -50,6 +57,8 @@ h1 {
 	font-weight: 600; 
 	color: #D6D989; 
 	text-shadow: 5px 3px 1px black;
+	margin-bottom: 0;
+	line-height: 0;
 }
 
 /* Propiedades de encabezado h2 */
@@ -63,6 +72,7 @@ h2 {
 	font-weight: 600;
 	font-style: italic;
 	text-align: center;
+	font-weight: bold;
 }
 
 /* Propiedad de encabezado h3 */
@@ -73,11 +83,14 @@ h3 {
 /* Propiedad de encabezado h4 */
 h4 {
 	padding: 5px;
+	font-size: 1.5rem;
 }
 
 /* Propiedad de encabezado h5 */
 h5 {
 	padding: 5px;
+	font-size: 1.2rem;
+	font-weight: bold;
 }
 
 /* Propiedades de grid de la sección Inicio */
@@ -172,6 +185,14 @@ header {
 	background-image: linear-gradient(to right, #45B649, #DCE35B);
 }
 
+/* Propiedades de grid al encabezado de la sección Contacto */
+.header__contacto {
+	grid-area: header;
+	display: grid;
+	grid-template-columns: auto;
+	background-image: linear-gradient(to right, #45B649, #DCE35B);
+}
+
 /* Propiedades de flex al contenedor del logo */
 .header__contenedorLogo {
 	display: flex;
@@ -210,22 +231,49 @@ header {
 	transition: background-color 2s ease;
 }
 
+/* Propiedades de elementos del menu de navegación de la sección Contacto */
+.navegacion__items--contacto {
+	font-size: 1em;
+	text-align: center;
+	padding: 15px;
+	border-radius: 10px;
+	transition: background-color 2s ease;
+}
+
 /* Transición de elementos del menu de navegación */
 .navegacion__items:hover {
 	background-color: #45B649;
 }
 
-/* Propiedades de flex al futuro coverflow de la sección Inicio */
+/* Transición de elementos del menu de navegación de la sección Contacto */
+.navegacion__items--contacto:hover {
+	background-color: #45B649;
+}
+
+/* Propiedades de elementos del menu de navegación */
+.navegacion__items--modificado {
+	font-size: 1em;
+	text-align: center;
+	padding: 15px;
+	border-radius: 10px;
+}
+
+/* Cambio de propiedades de botón buscar de menú de navegación */
+.btn-outline-success {
+	color: #45B649;
+	border-color: #45B649;
+}
+
+/* Transición de botón buscar del menu de navegación */
+.btn-outline-success:hover {
+background-color: #45B649;
+border-color: #45B649;
+}
+
+/* Propiedades de grid al carrousel de la sección Inicio */
 section.coverFlow {
 	grid-area: coverflow;
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: space-evenly;
-	align-items: center;
-	padding: 20px;
-	margin: 20px;	
-	background-color: #f2f2f2; 
-    border-radius: 15px;
+	margin-top: 20px;
 }
 
 /* Propiedades de grid al contenido productos de la sección Inicio */
@@ -351,14 +399,6 @@ section.contacto {
 .seccion__thumbnail {
     width: 250px;
     height: 150px;
-    border-radius: 10px;
-    overflow: hidden;
-}
-
-/* Propiedades de contenedor de imágenes de futuro coverflow de sección Inicio */
-.seccion__thumbnail--coverFlow {
-    width: 350px;
-    height: 200px;
     border-radius: 10px;
     overflow: hidden;
 }
@@ -588,6 +628,18 @@ footer {
 	margin-top: 20px;
 }
 
+/* Cambio de propiedades de íconos de carrusel */
+.carousel-control-prev-icon, .carousel-control-next-icon {
+	width: 5rem;
+    height: 5rem;
+}
+
+/* Cambio de propiedades de fotos de carrusel para responsive*/
+.carousel img{
+	object-fit: cover;
+	object-position: center;
+	height: 50vh;
+}
 /* Efecto de la animación título de sección */
 @keyframes textoTienda {
     0% {
