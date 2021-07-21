@@ -4,160 +4,302 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <!-- Tipografia -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<title>TenisLab - Promociones</title>
+    <!-- CSS Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <!-- CSS Animate -->
+    <link rel="stylesheet" href="css/animate.css">
+    <!-- CSS Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- CSS Local -->
+    <link rel="stylesheet" href="css/style.css">
+    <title>TenisLab - Promociones</title>
 </head>
 <body>
-    <!-- Inicio de grid -->
-    <div class="grillaPromocion">
-        <!-- Inicio encabezado del sitio web -->
-        <header class="header">
-            <div class="header__contenedorLogo">
-                <a href="index.html"><img src="img/tenislab.jpg" class="header__logo"></a>
-            </div>
-            <!-- Inicio menú de navegación del sitio web -->
-            <nav class="navegacion">  
-                <div class="navegacion__items">
-                    <a href="index.html">INICIO</a>
-                </div>
-                <div class="navegacion__items">
-                    <a href="sobrenosotros.html">SOBRE NOSOTROS</a>
-                </div>
-                <div class="navegacion__items">
-                    <a href="productosyservicios.html">PRODUCTOS Y SERVICIOS</a>
-                </div>
-                <div class="navegacion__items">
-                    <a href="promociones.html">PROMOCIONES</a>
-                </div>
-                <div class="navegacion__items">
-                    <a href="contacto.html">CONTACTO</a>
-                </div>
-            </nav>
-            <!-- Fin menú de navegación del sitio web -->
-        </header>
-        <!-- Fin encabezado del sitio web -->
-        <!-- Inicio del contenido -->
-        <h1>Promociones</h1>
-            <h2 id="inlineBlock">Encontrá aquí los productos que están en promoción. Para enterarte antes que todos, suscribite a nuestra Newsletter <a href="contacto.html">aquí</a>!!!</h2>
-        <section class="promocion">
-            <div class="galeria">
-                <div class="galeria__contenedor">
-                    <div class="galeria__textoEncima">¡OFERTA!</div>
-                    <img src="img/raqueta-babolat-pure-aero.png" alt="Raqueta Babolat Pure Aero" class="galeria__img">
-                    <h4>RAQUETA BABOLAT PURE AERO</h4>
-                    <h5 class="galeria__precioViejo">$ 36.900</h5>
-                    <p class="galeria__precioNuevo">$ 31.900</p>
-                    <p class="galeria__texto">300gr, Graphito, patrón 16x19, Aro 100, incluye encordado mas funda.</p>
-                </div>
-                <div class="galeria__contenedor">
-                    <div class="galeria__textoEncima">¡OFERTA!</div>
-                    <img src="img/raqueta-yonex-vcore-flame-100-2021.png" alt="Raqueta Yonex Vcore Flame 100 2021 Boost Aero 102" class="galeria__img">
-                    <h4>RAQUETA YONEX VCORE FLAME 100 2021</h4>
-                    <h5 class="galeria__precioViejo">$ 31.500</h5>
-                    <p class="galeria__precioNuevo">$ 38.500</p>
-                    <p class="galeria__texto">300gr, Graphito, patrón 16x19, Aro 100, incluye encordado mas funda.</p>
-                </div>
-                <div class="galeria__contenedor">
-                    <div class="galeria__textoEncima">¡OFERTA!</div>
-                    <img src="img/paleta-varlion-pansy-2020-ctr.png" alt="Paleta Varlion Pansy 2020 CTR" class="galeria__img">
-                    <h4>PALETA VARLION PANSY 2020 CTR</h4>
-                    <h5 class="galeria__precioViejo">$ 34.900</h5>
-                    <p class="galeria__precioNuevo">$ 31.900</p>
-                    <p class="galeria__texto">365gr, Carbono, Diamante, 38mm.</p>
-                </div>
-                <div class="galeria__contenedor">
-                    <div class="galeria__textoEncima">¡OFERTA!</div>
-                    <img src="img/paleta-babolat-viper-fibra-2020.png" alt="Paleta Babolat Viper  Viper 2021" class="galeria__img">
-                    <h4>PALETA BABOLAT VIPER 2020</h4>
-                    <h5 class="galeria__precioViejo">$ 28.900</h5>
-                    <p class="galeria__precioNuevo">$ 25.900</p>
-                    <p class="galeria__texto">365gr, Carbono, Diamante, 38mm. Incluye funda</p>
-                </div>
-                <div class="galeria__contenedor">
-                    <div class="galeria__textoEncima">¡OFERTA!</div>
-                    <img src="img/raquetero-wilson-tour-red-3-comp.png" alt="Raquetero Wilson Tour" class="galeria__img">
-                    <h4>RAQUETERO WILSON TOUR</h4>
-                    <h5 class="galeria__precioViejo">$ 22.900</h5>
-                    <p class="galeria__precioNuevo">$ 19.900</p>
-                    <p class="galeria__texto">Para 12 raquetas</p>
-                </div>
-                <div class="galeria__contenedor">
-                    <div class="galeria__textoEncima">¡OFERTA!</div>
-                    <img src="img/mochila-wilson-federer-red.png" alt="Mochila Wilson Federer" class="galeria__img">
-                    <h4>MOCHILA WILSON FEDERER</h4>
-                    <h5 class="galeria__precioViejo">$ 18.900</h5>
-                    <p class="galeria__precioNuevo">$ 16.900</p>
-                </div>
-                <div class="galeria__contenedor">
-                    <div class="galeria__textoEncima">¡OFERTA!</div>
-                    <img src="img/tubo-pelotas-wilson-us-open.png" alt="Tubo Pelotas Wilson Us Open" class="galeria__img">
-                    <h4>TUBO DE PELOTAS WILSON US OPEN X3</h4>
-                    <h5 class="galeria__precioViejo">$1.400</h5>
-                    <p class="galeria__precioNuevo">$ 1.000</p>
-                </div>
-                <div class="galeria__contenedor">
-                    <div class="galeria__textoEncima">¡OFERTA!</div>
-                    <img src="img/tubo-pelotas-babolat-gold.png" alt="Tubo Pelotas Babolat Gold" class="galeria__img">
-                    <h4>TUBO DE PELOTAS BABOLAT GOLD X3</h4>
-                    <h5 class="galeria__precioViejo"> $ 1.900</h5>
-                    <p class="galeria__precioNuevo">$ 1.200</p>
-                </div>
-                <div class="galeria__contenedor">
-                    <div class="galeria__textoEncima">¡OFERTA!</div>
-                    <img src="img/anti-head-blue.png" alt="Antivibrador Head" class="galeria__img">
-                    <h4>ANTIVIBRADOR HEAD X1</h4>
-                    <h5 class="galeria__precioViejo">$ 300</h5>
-                    <p class="galeria__precioNuevo">$ 190</p>
-                </div>
-                <div class="galeria__contenedor">
-                    <div class="galeria__textoEncima">¡OFERTA!</div>
-                    <img src="img/grip-wilson.png" alt="Grip Wilson" class="galeria__img">
-                    <h4>GRIP WILSON MICRO DRI SUPER ABSORVE</h4>
-                    <h5 class="galeria__precioViejo">$ 1.250</h5>
-                    <p class="galeria__precioNuevo">$ 900</p>
-                </div>
-            </div>
-        </section> 
-        <!-- Fin del contenido -->
-        <!-- Inicio pie de página del sitio web -->
-        <footer class="footer">
-            <div>
-                <div class="footer__contenido">
-                    <h4>Información</h4>
-                    <ul >
-                        <li>&#128205; Roma esq. Alberdi</li>
-                        <li>&#128222; +54 9 3571685401</li>
-                        <li>&#128666; Envíos a todo el país</li>
-                    </ul>
-                </div>
-                <div class="footer__contenido">
-                    <h4>Medios de Pago</h4>
-                    <ul>
-                        <li>&#128181; Efectivo</li>
-                        <li>&#128179; Tarjetas de Crédito y Débito</li>
-                    </ul>
-                </div>
-                <div class="footer__contenido">
-                    <h5>2021 &#169; TenisLab. Todos los derechos reservados.</h5>
-                </div>
-            </div>
-            <div>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d337.3983750263822!2d-64.11561428800029!3d-32.17774193600193!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95cd6f24cc9b6e75%3A0xf31e908957e0133!2zUsOtbyBUZXJjZXJvLCBDw7NyZG9iYQ!5e1!3m2!1ses-419!2sar!4v1622466747814!5m2!1ses-419!2sar" allowfullscreen="" loading="lazy" class="footer__map"></iframe>
-            </div>
-            <div>
-                <h4>Visitanos en nuestras redes sociales</h4>
-                <ul>
-                    <li><a href="https://www.facebook.com/TenisLab-1454268848037093/"><img src="img/facebook.svg" class="footer__logos"></a></li>
-                    <li><a href="https://www.instagram.com/tenis.lab/?hl=es"><img src="img/instagram.svg" class="footer__logos"></a></li>
-                    <li><a href="https://api.whatsapp.com/send?phone=+5493571685401"><img src="img/whatsapp.svg" class="footer__logos"></a></li>
+    <!-- Inicio menú de navegación del sitio web -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid mt-3 mb-3">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/tenislab.jpg" class="nav-logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item px-lg-2">
+                        <a class="nav-link" aria-current="page" href="index.html">INICIO</a>
+                    </li>
+                    <li class="nav-item px-lg-2">
+                        <a class="nav-link" href="sobrenosotros.html">SOBRE NOSOTROS</a>
+                    </li>
+                    <li class="nav-item px-lg-2">
+                        <a class="nav-link" href="productosyservicios.html">PRODUCTOS Y SERVICIOS</a>
+                    </li>
+                    <li class="nav-item px-lg-2">
+                        <a class="nav-link active" href="promociones.html">PROMOCIONES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">CONTACTO</a>
+                    </li>
                 </ul>
+                <form class="d-flex px-lg-2">
+                    <input class="form-control me-2" type="search" placeholder="¿Qué estás buscando?" aria-label="Search">
+                    <button class="btn btn-outline-dark" type="submit">Buscar</button>
+                </form>
+                <form class="d-flex px-lg-2">
+                    <button class="btn btn-outline-dark" type="submit">
+                        <i class="fas fa-shopping-cart me-1"></i>
+                        Carrito
+                        <span class="badge bg-primary text-white ms-1 rounded-pill">0</span>
+                    </button>
+                </form>
             </div>
-        </footer>
-        <!-- Fin pie de página del sitio web -->
-    </div>
-    <!-- Fin de grid -->
+        </div>
+    </nav>
+    <!-- Fin menú de navegación del sitio web -->
+    <!-- Inicio encabezado del sitio web -->
+    <header>
+        <h1 class="display-5 fw-bolder text-white mb-5">Promociones</h1>
+            <h4 class="text-center">Encontrá aquí los productos que están en promoción. Para enterarte antes que todos, suscribite a nuestra Newsletter <a href="contacto.html" class="text-dark text-decoration-none">aquí</a>!!!</h4>
+    </header>
+    <!-- Fin encabezado del sitio web -->
+    <!-- Inicio del contenido -->
+    <section class="py-3">
+        <div class="my-3 container px-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+                <div class="col mb-4">
+                    <div class="card h-100">
+                        <div class="badge bg-warning text-body position-absolute text-position">¡OFERTA!</div>
+                        <img class="card-img-top" src="img/raqueta-babolat-pure-aero.jpg" alt="Raqueta Babolat Pure Aero">
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <h5 class="fw-bolder">RAQUETA BABOLAT PURE AERO</h5>
+                                <span class="text-muted text-decoration-line-through">$36.900</span>
+                                $31.900
+                            </div>
+                        </div>
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center">
+                                <a class="btn btn-outline-dark mt-auto" href="#">Agregar al carrito</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-4">
+                    <div class="card h-100">
+                        <div class="badge bg-warning text-body position-absolute text-position">¡OFERTA!</div>
+                        <img class="card-img-top" src="img/raqueta-yonex-vcore-flame-100-2021.jpg" alt="Raqueta Yonex Vcore Flame 100 2021 Boost Aero 102">
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <h5 class="fw-bolder">RAQUETA YONEX VCORE FLAME 100 2021</h5>
+                                <span class="text-muted text-decoration-line-through">$31.500</span>
+                                $38.500
+                            </div>
+                        </div>
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center">
+                                <a class="btn btn-outline-dark mt-auto" href="#">Agregar al carrito</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-4">
+                    <div class="card h-100">
+                        <div class="badge bg-warning text-body position-absolute text-position">¡OFERTA!</div>
+                        <img class="card-img-top" src="img/paleta-varlion-pansy-2020-ctr.jpg" alt="Paleta Varlion Pansy 2020 CTR">
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <h5 class="fw-bolder">PALETA VARLION PANSY 2020 CTR</h5>
+                                <span class="text-muted text-decoration-line-through">$34.900</span>
+                                $31.900
+                            </div>
+                        </div>
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center">
+                                <a class="btn btn-outline-dark mt-auto" href="#">Agregar al carrito</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-4">
+                    <div class="card h-100">
+                        <div class="badge bg-warning text-body position-absolute text-position">¡OFERTA!</div>
+                        <img class="card-img-top" src="img/paleta-babolat-viper-fibra-2020.jpg" alt="Paleta Babolat Viper  Viper 2021">
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <h5 class="fw-bolder">PALETA BABOLAT VIPER 2020</h5>
+                                <span class="text-muted text-decoration-line-through">$28.900</span>
+                                $25.900
+                            </div>
+                        </div>
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center">
+                                <a class="btn btn-outline-dark mt-auto" href="#">Agregar al carrito</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-4">
+                    <div class="card h-100">
+                        <div class="badge bg-warning text-body position-absolute text-position">¡OFERTA!</div>
+                        <img class="card-img-top" src="img/raquetero-wilson-tour-red-3-comp.jpg" alt="Raquetero Wilson Tour">
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <h5 class="fw-bolder">RAQUETERO WILSON TOUR</h5>
+                                <span class="text-muted text-decoration-line-through">$22.900</span>
+                                $19.900
+                            </div>
+                        </div>
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center">
+                                <a class="btn btn-outline-dark mt-auto" href="#">Agregar al carrito</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-4">
+                    <div class="card h-100">
+                        <div class="badge bg-warning text-body position-absolute text-position">¡OFERTA!</div>
+                        <img class="card-img-top" src="img/mochila-wilson-federer-red.jpg" alt="Mochila Wilson Federer">
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <h5 class="fw-bolder">MOCHILA WILSON FEDERER</h5>
+                                <span class="text-muted text-decoration-line-through">$18.900</span>
+                                $16.900
+                            </div>
+                        </div>
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center">
+                                <a class="btn btn-outline-dark mt-auto" href="#">Agregar al carrito</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-4">
+                    <div class="card h-100">
+                        <div class="badge bg-warning text-body position-absolute text-position">¡OFERTA!</div>
+                        <img class="card-img-top" src="img/tubo-pelotas-wilson-us-open.jpg" alt="Tubo Pelotas Wilson Us Open">
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <h5 class="fw-bolder">TUBO DE PELOTAS WILSON US OPEN X3</h5>
+                                <span class="text-muted text-decoration-line-through">$1.400</span>
+                                $1.000
+                            </div>
+                        </div>
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center">
+                                <a class="btn btn-outline-dark mt-auto" href="#">Agregar al carrito</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-4">
+                    <div class="card h-100">
+                        <div class="badge bg-warning text-body position-absolute text-position">¡OFERTA!</div>
+                        <img class="card-img-top" src="img/tubo-pelotas-babolat-gold.jpg" alt="Tubo Pelotas Babolat Gold">
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <h5 class="fw-bolder">TUBO DE PELOTAS BABOLAT GOLD X3</h5>
+                                <span class="text-muted text-decoration-line-through">$1.900</span>
+                                $1.200
+                            </div>
+                        </div>
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center">
+                                <a class="btn btn-outline-dark mt-auto" href="#">Agregar al carrito</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <div class="badge bg-warning text-body position-absolute text-position">¡OFERTA!</div>
+                        <img class="card-img-top" src="img/anti-head-blue.jpg" alt="Antivibrador Head">
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <h5 class="fw-bolder">ANTIVIBRADOR HEAD X1</h5>
+                                <span class="text-muted text-decoration-line-through">$300</span>
+                                $190
+                            </div>
+                        </div>
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center">
+                                <a class="btn btn-outline-dark mt-auto" href="#">Agregar al carrito</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <div class="badge bg-warning text-body position-absolute text-position">¡OFERTA!</div>
+                        <img class="card-img-top" src="img/grip-wilson.jpg" alt="Grip Wilson">
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <h5 class="fw-bolder">GRIP WILSON MICRO DRI SUPER ABSORVE</h5>
+                                <span class="text-muted text-decoration-line-through">$1.250</span>
+                                $900
+                            </div>
+                        </div>
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center">
+                                <a class="btn btn-outline-dark mt-auto" href="#">Agregar al carrito</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>                
+            </div>
+        </div>
+    </section>    
+    <!-- Fin del contenido -->
+    <!-- Inicio de pie de página -->
+    <footer class="text-center text-lg-start bg-light color-text">
+        <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+            <div class="me-5 d-none d-lg-block align-self-center wow animate__animated animate__fadeInLeft">
+                <span>Visítanos en nuestras redes sociales:</span>
+            </div>
+            <div class="wow animate__animated animate__fadeInRight">
+                <a href="https://www.facebook.com/TenisLab-1454268848037093/" class="me-4 text-reset fs-2"><i class="fab fa-facebook-square footer-logos"></i></a>
+                <a href="https://www.instagram.com/tenis.lab/?hl=es" class="me-4 text-reset fs-2"><i class="fab fa-instagram-square footer-logos"></i></a>
+                <a href="https://api.whatsapp.com/send?phone=+5493571685401" class="me-4 text-reset fs-2"><i class="fab fa-whatsapp-square footer-logos"></i></a>
+            </div>
+        </section>
+        <section class="container text-center text-md-start mt-4">
+            <div class="row mt-3">
+                <div class="col-md-4 col-lg-5 col-xl-4 mx-auto mb-3 wow animate__animated animate__fadeInLeft">
+                    <h6 class="text-uppercase fw-bold mb-4">Información</h6>
+                    <p><i class="fas fa-home me-3"></i> Roma esq. Alberdi, Río Tercero, Córdoba, Arg.</p>
+                    <p><i class="fas fa-phone me-3"></i> +54 9 3571685401</p>
+                    <p><i class="fas fa-truck me-3"></i></i> Envíos a todo el país</p>
+                </div>
+                <div class="col-md-4 col-lg-2 col-xl-4 mx-auto mb-3 text-center wow animate__animated animate__fadeInUp">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d337.3983750263822!2d-64.11561428800029!3d-32.17774193600193!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95cd6f24cc9b6e75%3A0xf31e908957e0133!2zUsOtbyBUZXJjZXJvLCBDw7NyZG9iYQ!5e1!3m2!1ses-419!2sar!4v1622466747814!5m2!1ses-419!2sar" allowfullscreen="" loading="lazy" class="footer-map img-thumbnail"></iframe>
+                </div>
+                <div class="col-md-4 col-lg-5 col-xl-4 mx-auto mb-md-0 mb-3 wow animate__animated animate__fadeInRight">
+                    <h6 class="text-uppercase fw-bold mb-4">Medios de Pago</h6>
+                    <p><i class="fas fa-money-bill-alt me-3"></i> Efectivo</p>
+                    <p><i class="fas fa-credit-card me-3"></i> Tarjetas de Crédito y Débito</p>
+                </div>
+            </div>
+        </section>
+        <div class="text-center p-4 wow animate__animated animate__fadeInUp" style="background-color: rgba(0, 0, 0, 0.05);">
+            2021 &#169; TenisLab. Todos los derechos reservados.
+        </div>
+    </footer>
+    <!-- Fin de pie de página -->
+    <!-- WOW.js -->
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <!-- JS Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
+    <!-- JS Font Awesome -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" integrity="sha512-RXf+QSDCUQs5uwRKaDoXt55jygZZm2V++WUZduaU/Ui/9EGp3f/2KZVahFZBKGH0s774sd3HmrhUy+SgOFQLVQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </body>
 </html>
