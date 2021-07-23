@@ -171,5 +171,8 @@ nav .form-control:focus, nav .form-check-input:focus, nav .form-check-input:chec
 nav .bg-primary {
   background-color: #3D3E40 !important;
 }
+nav .active {
+  color: white;
+}
 
 /*# sourceMappingURL=style.css.map */
