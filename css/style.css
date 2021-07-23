@@ -1,178 +1,175 @@
-/* Reseteo */
+@charset "UTF-8";
+/* Variables */
+/* Mixins */
+/* Propiedades de publicidad */
+aside .bg-primary {
+  background-color: #3D3E40 !important;
+}
+aside .justify {
+  text-align: justify;
+}
+aside .seccion-thumbnail {
+  width: 200px;
+  height: 200px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+aside .seccion-img {
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  filter: alpha(opacity=100);
+}
+
+/* Propiedades de botones*/
+.btn-outline-dark:hover {
+  color: #fff;
+  background-color: #3D3E40;
+  border-color: #3D3E40;
+}
+
+/* Propiedades del carrusel de sección Inicio*/
+header .carousel-control-prev-icon, header .carousel-control-next-icon {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+header .carousel img {
+  object-fit: cover;
+  object-position: center;
+  height: 50vh;
+}
+
+/* Propiedades del pie de página de las secciones */
+footer {
+  background-image: linear-gradient(to right, #45B649, #DCE35B);
+}
+footer .footer-map {
+  width: 300px;
+  height: 150px;
+  border: 0;
+  margin-top: 10px;
+}
+footer .footer-logos {
+  width: 30px;
+  height: 30px;
+  margin-top: 10px;
+  transition: transform 0.5s ease;
+}
+footer .footer-logos:hover {
+  -webkit-transform: scale(1.25, 1.25);
+  -o-transform: scale(1.25, 1.25);
+  -moz-transform: scale(1.25, 1.25);
+  transform: scale(1.25, 1.25);
+}
+footer .border-bottom {
+  border-bottom: 1px solid #3D3E40 !important;
+}
+
+/* Propiedades del formulario*/
+section .form-control:focus, section .form-check-input:focus, section .form-check-input:checked {
+  border-color: #3D3E40;
+  box-shadow: 0 0px 0px #3D3E40 inset, 0 0 5px #3D3E40;
+}
+section .bg-primary {
+  background-color: #3D3E40 !important;
+}
+
+/* Propiedades generales */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/* Propiedades del HTML */
-html { 
-	font-family: 'Work Sans', sans-serif; 
+html {
+  font-family: "Work Sans", sans-serif;
 }
 
-/* Cambio de propiedades del body */
 body {
-	font-family: 'Work Sans', sans-serif; 
-	background-color: #D2D9A3;
-	color: #3D3E40;
+  font-family: "Work Sans", sans-serif;
+  background-color: #D2D9A3;
+  color: #3D3E40;
 }
 
-/* Cambio de propiedades del menú de navegación */
-.navbar {
-	background-image: linear-gradient(to right, #45B649, #DCE35B);
+ul {
+  list-style-type: none;
+  list-style-position: outside;
+  line-height: 2;
 }
 
-/* Propiedades de logo */
-.nav-logo {
-	border-radius: 100px;
-	width: 125px;
-	height: 125px;
-	margin: 20px;
-	transition: transform 0.5s ease;
+.text-body {
+  color: #3D3E40 !important;
 }
 
-/* Transición de logo */
-.nav-logo:hover {
-    transform: scale(1.25, 1.25);
+.text-position {
+  margin-top: 0.5rem;
+  margin-left: 0.5rem;
 }
 
-/* Cambio de propiedades de elementos del menu de navegación */
-.navbar-dark .navbar-nav .nav-link {
-	color: #3D3E40;
-	border-radius: 10px;
-	transition: background-color 2s ease;
+/* Propiedades del encabezado de las secciones */
+header {
+  background-image: linear-gradient(to right, #45B649, #DCE35B);
 }
-
-/* Transición de elementos del menu de navegación */
-.navbar-dark:hover .navbar-nav:hover .nav-link:hover {
-	color: white;
-	background-color: #3D3E40;
-}
-
-/* Cambio de propiedades del encabezado h1 */
-h1 {
-	text-align: center;
-	background-color: #3D3E40;
-	padding: 0.5em;
-}
-
-/* Cambio de propiedades de encabezado del sitio web */
-.bg-dark {
-	background-image: linear-gradient(to right, #45B649, #DCE35B);  
-}
-
-/* Cambio de propiedades de íconos de carrusel */
-.carousel-control-prev-icon, .carousel-control-next-icon {
-	width: 2.5rem;
-    height: 2.5rem;
-}
-
-/* Cambio de propiedades de fotos de carrusel para responsive*/
-.carousel img{
-	object-fit: cover;
-	object-position: center;
-	height: 50vh;
-}
-
-/* Propiedades de contenedor de imágenes de publicidad de sección Inicio */
-.seccion-thumbnail--publicidad {
-    width: 200px;
-    height: 200px;
-    border-radius: 5px;
-    overflow: hidden;
+header h1 {
+  text-align: center;
+  background-color: #3D3E40;
+  padding: 0.5em;
 }
 
 /* Propiedades de imágenes */
-.seccion-img {
-    width: 100%;
-    height: 100%;
-	z-index:1;
-	filter:alpha(opacity=100);
+section .seccion-thumbnail {
+  width: 200px;
+  height: 200px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+section .seccion-img {
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  filter: alpha(opacity=100);
+}
+section .seccion-img:hover {
+  transition: 1s ease;
+  opacity: 0.7;
+}
+section .card-img-top {
+  filter: brightness(1.1);
+  mix-blend-mode: multiply;
 }
 
-/* Transición de imágenes */
-.seccion-img:hover {
-	transition: 1s ease;
-	opacity: 70;
-	-moz-opacity:.70;
-	opacity:.70;
+/* Propiedades del menú de navegación de las secciones */
+nav {
+  background-image: linear-gradient(to right, #45B649, #DCE35B);
+}
+nav .nav-logo {
+  border-radius: 100px;
+  width: 125px;
+  height: 125px;
+  margin: 20px;
+  transition: transform 0.5s ease;
+}
+nav .nav-logo:hover {
+  -webkit-transform: scale(1.25, 1.25);
+  -o-transform: scale(1.25, 1.25);
+  -moz-transform: scale(1.25, 1.25);
+  transform: scale(1.25, 1.25);
+}
+nav .nav-link {
+  color: #3D3E40;
+  border-radius: 10px;
+  transition: background-color 2s ease;
+}
+nav .nav-link:hover {
+  color: white;
+  background-color: #3D3E40;
+}
+nav .form-control:focus, nav .form-check-input:focus, nav .form-check-input:checked {
+  border-color: #3D3E40;
+  box-shadow: 0 0px 0px #3D3E40 inset, 0 0 5px #3D3E40;
+}
+nav .bg-primary {
+  background-color: #3D3E40 !important;
 }
 
-/* Cambio de propiedades de color de fondo*/
-.bg-primary {
-	background-color: #3D3E40 !important;
-}
-
-/* Propiedad de texto justificado */
-.justify {
-	text-align: justify;
-}
-
-/* Propiedades al pie de página de las secciones */
-footer {
-	background-image: linear-gradient(to right, #45B649, #DCE35B);
-}
-
-/* Propiedades de mapa de pie de página de las secciones */
-.footer-map {
-	width: 300px;
-	height: 150px;
-    border: 0; 
-    margin-top: 10px;
-}
-
-/* Propiedades de logos de redes sociales de pie de página de las secciones */
-.footer-logos {
-	width: 30px;
-	height: 30px;
-	margin-top: 10px;
-	transition: transform 0.5s ease;
-}
-
-/* Transición de logos de redes sociales de pie de página de las secciones */
-.footer-logos:hover {
-    transform: scale(1.25, 1.25);
-}
-
-/* Cambio de propiedades al borde inferior de apartado de redes sociales de pie de página*/
-.border-bottom {
-    border-bottom: 1px solid #3D3E40 !important;
-}
-
-/* Propiedades de listas no ordenadas */
-ul {
-	list-style-type: none;
-	list-style-position: outside;
-	line-height: 2;
-}
-
-/* Cambio de propiedades a imágenes de seccionesd*/
-.card-img-top {
-	filter: brightness(1.1);
-	mix-blend-mode: multiply;
-	transition: transform 0.5s ease;
-}
-
-/* Cambio de propiedades de botones*/
-.btn-outline-dark:hover {
-    color: #fff;
-    background-color: #3D3E40;
-    border-color: #3D3E40;
-}
-
-/* Cambio de propiedades al texto de las tarjetas de productos*/
-.text-body {
-    color: #3D3E40 !important;
-}
-
-/* Cambio de propiedades al formulario*/
-.form-control:focus, .form-check-input:focus, .form-check-input:checked {
-	border-color: #3D3E40;
-	box-shadow: 0 0px 0px #3D3E40 inset, 0 0 5px #3D3E40;
-}
-
-/* Propiedades de posición de badges en sección promoción */
-.text-position {
-	margin-top: 0.5rem;
-	margin-left: 0.5rem;
-}
+/*# sourceMappingURL=style.css.map */
