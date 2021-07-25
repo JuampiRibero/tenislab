@@ -1,0 +1,12 @@
+/* Propiedades del carrusel de sección Inicio*/
+header {
+    .carousel-control-prev-icon, .carousel-control-next-icon {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+    .carousel img{
+        object-fit: cover;
+        object-position: center;
+        height: 50vh;
+    }
+}

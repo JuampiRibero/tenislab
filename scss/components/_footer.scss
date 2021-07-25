@@ -1,0 +1,22 @@
+/* Propiedades del pie de página de las secciones */
+footer {
+    background-image: $bg-img-color;
+    .footer-map {
+        width: 300px;
+        height: 150px;
+        border: 0; 
+        margin-top: 10px;
+    }
+    .footer-logos {
+        width: 30px;
+        height: 30px;
+        margin-top: 10px;
+        transition: transform 0.5s ease;
+            &:hover {
+                @include prefijos (scale(1.25, 1.25));
+            }
+    }
+    .border-bottom {
+        border-bottom: 1px solid #3D3E40 !important;
+    }
+}
