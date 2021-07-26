@@ -16,7 +16,7 @@ nav {
         border-radius: $radius*0.1;
         transition: background-color 2s ease;
             &:hover {
-                color: white;
+                color: $text-color-hover !important;
                 background-color: $bg-color;
             }
     }
@@ -28,6 +28,6 @@ nav {
         background-color: $bg-color !important;
     }
     .active {
-        color: white;
+        color: white !important;
     }
 }
