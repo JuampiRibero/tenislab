@@ -19,4 +19,19 @@ footer {
     .border-bottom {
         border-bottom: 1px solid #3D3E40 !important;
     }
+    .float {
+        position: fixed;
+        width: 60px;
+        height: 57px;
+        bottom: 75px;
+        right: 10px;
+        padding-top: 3px;
+        background-color: #01B32B;
+        color: #FFF;
+        border-radius: 50px;
+        text-align: center;
+        font-size: 34px;
+        box-shadow: 2px 2px 3px #999;
+        z-index: 6;
+    }
 }
