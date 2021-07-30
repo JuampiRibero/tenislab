@@ -34,4 +34,9 @@ footer {
         box-shadow: 2px 2px 3px #999;
         z-index: 6;
     }
+    @media (max-width: 576px) {
+        .float {
+            transform: scale(0.75);
+        }
+    }
 }

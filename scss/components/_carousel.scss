@@ -9,4 +9,10 @@ header {
         object-position: center;
         height: 50vh;
     }
+    @media (min-width: 1200px) {
+        .carousel img {
+            height: 65vh;
+        }
+    }
 }
+

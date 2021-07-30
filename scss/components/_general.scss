@@ -29,3 +29,13 @@ ul {
 	margin-top: 0.5rem;
 	margin-left: 0.5rem;
 }
+
+@media (max-width: 576px) {
+	h4 {
+		font-size: calc(1.10rem + .3vw)
+	}
+	h5 {
+		font-size: calc(1rem + .3vw)
+	}
+}
+

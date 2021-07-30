@@ -30,4 +30,12 @@ nav {
     .active {
         color: white !important;
     }
+    @media (max-width: 576px) {
+        .nav-logo {
+            transform: scale(0.75);
+                &:hover {
+                    @include prefijos (scale(1.05, 1.05));
+                }
+        }
+    }
 }

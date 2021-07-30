@@ -43,6 +43,11 @@ header .carousel img {
   object-position: center;
   height: 50vh;
 }
+@media (min-width: 1200px) {
+  header .carousel img {
+    height: 65vh;
+  }
+}
 
 /* Propiedades del pie de página de las secciones */
 footer {
@@ -83,6 +88,11 @@ footer .float {
   font-size: 34px;
   box-shadow: 2px 2px 3px #999;
   z-index: 6;
+}
+@media (max-width: 576px) {
+  footer .float {
+    transform: scale(0.75);
+  }
 }
 
 /* Propiedades del formulario*/
@@ -126,6 +136,15 @@ ul {
   margin-left: 0.5rem;
 }
 
+@media (max-width: 576px) {
+  h4 {
+    font-size: calc(1.10rem + .3vw);
+  }
+
+  h5 {
+    font-size: calc(1rem + .3vw);
+  }
+}
 /* Propiedades del encabezado de las secciones */
 header {
   background-image: linear-gradient(to right, #45B649, #DCE35B);
@@ -193,6 +212,17 @@ nav .bg-primary {
 }
 nav .active {
   color: white !important;
+}
+@media (max-width: 576px) {
+  nav .nav-logo {
+    transform: scale(0.75);
+  }
+  nav .nav-logo:hover {
+    -webkit-transform: scale(1.05, 1.05);
+    -o-transform: scale(1.05, 1.05);
+    -moz-transform: scale(1.05, 1.05);
+    transform: scale(1.05, 1.05);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
