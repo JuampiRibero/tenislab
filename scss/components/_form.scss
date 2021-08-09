@@ -7,4 +7,7 @@ section {
     .bg-primary {
         background-color: $bg-color !important;
     }
+    .form-control {
+        resize: none;
+    }
 }
